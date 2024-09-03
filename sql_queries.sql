@@ -4,13 +4,13 @@ WHERE DateOfBirth BETWEEN '2000-01-01' AND '2004-12-31';
 
 -- Number 2 -- 
 SELECT 
-    PostedBy AS User_ID, 
-    PostID, 
-    PostDescription, 
-    IsPublic, 
-    IsOnlyForFriends, 
-    GroupID, 
-    DatePosted
+PostedBy AS User_ID, 
+PostID, 
+PostDescription, 
+IsPublic, 
+IsOnlyForFriends, 
+GroupID, 
+DatePosted
 FROM Posts
 WHERE PostedBy = 4;
 
@@ -20,10 +20,10 @@ FROM Groups;
 
 -- Number 4 --
 SELECT 
-    GroupMemberUserID AS User_ID, 
-    GroupMemberShipRequestsID, 
-    GroupID, 
-    IsGroupMemberShipAccepted
+GroupMemberUserID AS User_ID, 
+GroupMemberShipRequestsID, 
+GroupID, 
+IsGroupMemberShipAccepted
 FROM GroupMembershipRequests
 WHERE GroupMemberUserID = 2;
 
@@ -39,9 +39,13 @@ WHERE (fr.FriendWhoAdded = 2 OR fr.FriendBeingAdded = 2)
 AND fr.IsAccepted = TRUE AND us.UserID != 2;
 
 -- Number 6 --
-SELECT * FROM Friends
+SELECT 
+FriendWhoAdded AS User_ID,
+FriendID, 
+IsAccepted,
+DateAdded
+FROM Friends
 WHERE FriendWhoAdded = 1;
-
 -- Number 7 -- 
 SELECT * FROM Posts
 WHERE GroupID = 2;
