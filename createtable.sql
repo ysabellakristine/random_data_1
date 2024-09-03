@@ -11,7 +11,7 @@ CREATE TABLE Users (
 
 -- Create Friends Table
 CREATE TABLE Friends (
-    FriendID INTEGER PRIMARY KEY,,
+    FriendID INTEGER PRIMARY KEY,
     FriendWhoAdded INT,
     FriendBeingAdded INT,
     IsAccepted BOOLEAN,
@@ -21,7 +21,7 @@ CREATE TABLE Friends (
 
 -- Create Groups Table
 CREATE TABLE Groups (
-    GroupID INTEGER PRIMARY KEY,,
+    GroupID INTEGER PRIMARY KEY,
     GroupName VARCHAR(100),
     CreatedBy INT,
     DateAdded TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -30,7 +30,7 @@ CREATE TABLE Groups (
 
 -- Create Posts Table
 CREATE TABLE Posts (
-    PostID INTEGER PRIMARY KEY,,
+    PostID INTEGER PRIMARY KEY,
     PostDescription VARCHAR(255),
     PostedBy INT,
     IsPublic BOOLEAN,
@@ -41,7 +41,7 @@ CREATE TABLE Posts (
 
 -- Create Group Membership Requests Table
 CREATE TABLE GroupMembershipRequests (
-    GroupMemberShipRequestsID INTEGER PRIMARY KEY,,
+    GroupMemberShipRequestsID INTEGER PRIMARY KEY,
     GroupID INT,
     GroupMemberUserID INT,
     IsGroupMemberShipAccepted BOOLEAN,
