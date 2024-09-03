@@ -37,8 +37,10 @@ FROM Users us
 JOIN Friends fr ON (us.UserID = fr.FriendWhoAdded OR us.UserID = fr.FriendBeingAdded)
 WHERE (fr.FriendWhoAdded = 2 OR fr.FriendBeingAdded = 2)
 AND fr.IsAccepted = TRUE AND us.UserID != 2;
--- Number 6 --
 
+-- Number 6 --
+SELECT * FROM Friends
+WHERE FriendWhoAdded = 1;
 
 -- Number 7 -- 
 SELECT * FROM Posts
