@@ -201,7 +201,7 @@ insert into Users (Username, FirstName, LastName, DateOfBirth, Password) values 
 insert into Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) values (143, 62, false);
 insert into Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) values (160, 151, false);
 insert into Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) values (188, 105, true);
-insert into Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) values (72, 86, false);
+insert into Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) values (1, 86, false);
 insert into Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) values (28, 86, true);
 insert into Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) values (20, 40, true);
 insert into Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) values (54, 142, false);
